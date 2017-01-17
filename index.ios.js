@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 
-class FlexDirectionBasics extends Component {
+class JustifyContentBasics extends Component {
   render() {
     return (
-      // Try setting `flexDirection` to `column`.
-      <View style={{flex: 1, flexDirection: 'row'}}>
+      // Try setting `justifyContent` to `center`.
+      // Try setting `flexDirection` to `row`.
+      <View style={{
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+      }}>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
@@ -14,4 +19,4 @@ class FlexDirectionBasics extends Component {
   }
 };
 
-AppRegistry.registerComponent('ReactNativeTutorial', () => FlexDirectionBasics);
+AppRegistry.registerComponent('ReactNativeTutorial', () => JustifyContentBasics);
