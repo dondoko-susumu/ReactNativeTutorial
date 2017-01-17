@@ -16,6 +16,9 @@ export default class ReactNativeTutorial extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.hello}>
+          こんにちは　世界。
+        </Text>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
